@@ -100,11 +100,11 @@
   <!-- DB3 Section -->
   <section id="db3" class="min-h-screen px-8 py-20 bg-[#0e0e0e]">
     <div class="max-w-5xl mx-auto text-center">
-      <h2 class="text-4xl font-bold mb-4" x-text="lang === 'en' ? 'DB3: A Modern Database Kernel We Built' : 'DB3：我们编写的一个现代化的数据库内核'"></h2>
+      <h2 class="text-4xl font-bold mb-4" x-text="lang === 'en' ? 'DB3: A Reusable Database Kernel We Built' : 'DB3：我们编写的一个可复用的数据库内核'"></h2>
 	  <div class="w-16 h-1 bg-yellow-400 mx-auto mb-8"></div>
       <p class="text-gray-400 text-lg max-w-3xl mx-auto mb-10" x-text="lang === 'en' 
-        ? 'We implemented DB3 to prove our capacities: built with C++20, DB3 emphasizes robustness, developer friendliness, high performance and scalability. We use benchmarks to prove its strength.' 
-        : '我们编写了DB3证明我们的能力：DB3用C++20编写：强调健壮性、构建开发友好、高性能和扩展性。我们用基准测试来证明它的能力。'"></p>
+        ? 'We implemented DB3 to prove our capacities: built with C++20, DB3 emphasizes robustness, developer friendliness, high performance and scalability. We use benchmarks to prove its strength, and build CacheFlow to prove its reusability' 
+        : '我们编写了DB3证明我们的能力：DB3用C++20编写：强调健壮性、构建开发友好、高性能和扩展性。我们用基准测试来证明它的能力，构筑CacheFlow产品来证明其可复用性'"></p>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div class="bg-[#1a1a1a] p-6 rounded-2xl hover:scale-105 transition">
           <h3 class="text-xl font-semibold mb-3" x-text="lang === 'en' ? 'Optimizer: DAG to IRs' : '优化器：DAG -> IRs'"></h3>
@@ -150,17 +150,19 @@
 			: 'DB3极限的性能，探索支持的向量索引是Agent centric数据库的基础。不仅如此，分离的存算结构也有使用于agent的访问模式。'">
 		  </p>
 		</div>
-        <div class="bg-[#1a1a1a] p-6 rounded-2xl hover:scale-105 transition">
-          <h3 class="text-xl font-semibold mb-3" x-text="lang === 'en' ? 'Benchmark Proven Performance' : '基准测试证明的性能'"></h3>
-          <p class="text-gray-400" x-html="lang === 'en' 
-            ? 'We demonstrate our leading performance using TPC-C, TPC-H, TPC-DS, and streaming benchmarks. See the detailed technical report <a href=https://db3kernel.github.io/db3_260408.pdf target=_blank class=text-blue-400 underline>here</a>.' 
-            : '我们使用TPCC、TPCH、TPCDS和流变体证明我们的领先的性能。详细技术报告看<a href=https://db3kernel.github.io/db3_260408.pdf target=_blank class=text-blue-400 underline>这里</a>'"></p>
-        </div>
-		<div class="bg-[#1a1a1a] p-6 rounded-2xl hover:scale-105 transition">
-		  <h3 class="text-xl font-semibold mb-3" x-text="lang === 'en' ? 'Who We Are?' : '我们是谁？'"></h3>
+  <div class="bg-[#1a1a1a] p-6 rounded-2xl hover:scale-105 transition">
+    <h3 class="text-xl font-semibold mb-3" x-text="lang === 'en' ? 'Benchmark-Proven Performance' : '基准测试验证的性能'"></h3>
+    <p class="text-gray-400"
+       x-html="lang === 'en' 
+         ? 'We demonstrate leading performance across TPC-C, TPC-H, TPC-DS, and streaming benchmarks. See the detailed technical report <a href=https://db3kernel.github.io/db3_260408.pdf target=_blank class=text-blue-400 underline>here</a>. Contact <a href=https://www.linkedin.com/in/zhouqingqing/ target=_blank class=text-blue-400 underline>Us</a>.' 
+         : '我们通过 TPC-C、TPC-H、TPC-DS 以及流式基准测试验证了领先性能。详细技术报告见<a href=https://db3kernel.github.io/db3_260408.pdf target=_blank class=text-blue-400 underline>这里</a>。欢迎<a href=https://www.linkedin.com/in/zhouqingqing/ target=_blank class=text-blue-400 underline>联系我们</a>。'">
+    </p>
+  </div>
+    <div class="bg-[#1a1a1a] p-6 rounded-2xl hover:scale-105 transition">
+		  <h3 class="text-xl font-semibold mb-3" x-text="lang === 'en' ? 'CacheFlow' : 'CacheFlow'"></h3>
 		  <p class="text-gray-400" x-html="lang === 'en' 
-			? 'We are industry veterans in database kernel development. Our team includes PostgreSQL contributors, CockroachDB PMC members, and Linux kernel contributors. Contact <a href=https://www.linkedin.com/in/zhouqingqing/ target=_blank class=text-blue-400 underline>us</a>' 
-			: '我们是数据库内核的业界老兵。我们中有PostgreSQL代码贡献者, CockroachDB PMC成员和Linux内核代码贡献者。联系<a href=https://www.linkedin.com/in/zhouqingqing/ target=_blank class=text-blue-400 underline>我们</a>'">
+			? 'To demonstrate the reusability of DB3Kernel, we built CacheFlow, which automatically synchronizes data between Redis and backend databases using SQL.' 
+			: '为了证明db3kernel的可复用性，我们构筑了CacheFlow，它通过SQL来自动同步Redis和后台数据库的内容。'">
 		  </p>
 		</div>
       </div>
